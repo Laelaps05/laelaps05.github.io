@@ -1,0 +1,45 @@
+:root{
+  --bg:#ffffff;
+  --fg:#0b0b0b;
+  --muted:#555;
+  --accent:#0066cc;
+  --max-width:900px;
+  --print-bg: #ffffff;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;
+  background:var(--bg); color:var(--fg); line-height:1.45; padding-bottom:4rem;
+}
+.container{max-width:var(--max-width); margin:0 auto; padding:1rem}
+.site-header{border-bottom:1px solid #eee; background:linear-gradient(180deg, rgba(0,0,0,0.02), transparent)}
+.header-inner{display:flex; align-items:center; justify-content:space-between}
+.name{margin:.5rem 0; font-size:1.6rem}
+.contact a{color:var(--accent); text-decoration:none}
+.main{display:grid; grid-template-columns:1fr; gap:1rem; padding-top:1rem}
+h2{margin:.25rem 0 .5rem}
+.meta{color:var(--muted); font-size:0.95rem}
+section{background:rgba(0,0,0,0.02); padding:1rem; border-radius:8px}
+article+article{margin-top:.75rem}
+.site-footer{position:fixed; left:0; right:0; bottom:0; background:#fafafa; border-top:1px solid #eee; padding:.5rem 0; text-align:center}
+
+/* responsive */
+@media(min-width:700px){
+  .main{grid-template-columns: 2fr 1fr}
+  .experience{grid-column:1/2}
+  .education,.skills,.projects{grid-column:2/3}
+}
+
+/* dark theme */
+:root.dark{
+  --bg:#0b0c0d; --fg:#e7e7e7; --muted:#9aa; --accent:#66aaff; --print-bg:#0b0c0d
+}
+
+/* print */
+@media print{
+  body{color:#000; background:var(--print-bg);}
+  .site-header, .site-footer{display:none}
+  .container{padding:0}
+  section{background:transparent; border-radius:0; padding:0}
+}
