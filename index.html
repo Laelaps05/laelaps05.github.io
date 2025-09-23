@@ -1,71 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Resume - Your Name</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matthew Mills - Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #004080;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    section {
+      padding: 1.5rem;
+      border-bottom: 1px solid #ddd;
+    }
+    section:last-child {
+      border-bottom: none;
+    }
+    h2 {
+      color: #004080;
+      margin-top: 0;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <h1 class="name">Your Name</h1>
-      <div class="contact">
-        <a href="mailto:you@example.com">you@example.com</a>
-        <span>•</span>
-        <a href="#" id="toggleTheme" aria-pressed="false">Toggle theme</a>
-      </div>
-    </div>
+  <header>
+    <h1>Matthew Mills</h1>
+    <p>Web Developer | Drupal Specialist | DevOps Engineer</p>
+    <p><a href="mailto:youremail@example.com" style="color:#fff;">youremail@example.com</a></p>
   </header>
 
-  <main class="container main">
-    <section class="summary">
-      <h2>Summary</h2>
-      <p>Product-focused software engineer with experience building web applications. Comfortable across the stack, from UI to backend services. Looking for roles in small teams where impact and craftsmanship matter.</p>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>I am a detail-oriented web developer with extensive experience in Drupal site building, theming, and migrations. I work with Acquia Cloud for DevOps and infrastructure tasks, manage Git workflows, and collaborate on large-scale web projects for the National Institute of General Medical Sciences (NIGMS). I also enjoy creative community projects in theater and design.</p>
     </section>
 
-    <section class="experience">
+    <section>
       <h2>Experience</h2>
-      <article>
-        <h3>Software Engineer — Acme Co.</h3>
-        <p class="meta">Jan 2022 — Present</p>
-        <ul>
-          <li>Built a single-page app used by 10k+ monthly users with React and Node.</li>
-          <li>Improved critical-path performance by 40% through optimizations and lazy-loading.</li>
-        </ul>
-      </article>
-
-      <article>
-        <h3>Full-stack Developer — Beta Inc.</h3>
-        <p class="meta">Aug 2019 — Dec 2021</p>
-        <ul>
-          <li>Shipping features end-to-end: design, API, deployment and monitoring.</li>
-        </ul>
-      </article>
-    </section>
-
-    <section class="education">
-      <h2>Education</h2>
-      <p>B.S. Computer Science — University Name (2015)</p>
-    </section>
-
-    <section class="skills">
-      <h2>Skills</h2>
-      <p>JavaScript, TypeScript, React, Node.js, HTML, CSS, Git, Testing</p>
-    </section>
-
-    <section class="projects">
-      <h2>Projects</h2>
+      <h3>National Institute of General Medical Sciences (NIGMS)</h3>
+      <p><strong>Web Developer & Site Migration Lead</strong> | 2023 – Present</p>
       <ul>
-        <li><strong>Open-source library</strong> — Small description and link.</li>
+        <li>Led large-scale Drupal 10 migrations, including blogs and custom content types.</li>
+        <li>Built custom modules and themes for features such as Image & Video Gallery, interactive quizzes, and educational resources.</li>
+        <li>Managed DevOps tasks on Acquia Cloud: SSH/rsync deployments, SSL configuration, site aliases, and environment synchronization.</li>
+        <li>Optimized front-end design using Twig templates, Bootstrap 5, SCSS, and JavaScript libraries (Featherlight, amCharts).</li>
+        <li>Implemented automated content imports with Drupal’s Migrate API (JSON, CSV, and SharePoint sources).</li>
       </ul>
+
+      <h3>Community & Creative Projects</h3>
+      <p><strong>The British Players</strong> | 2020 – Present</p>
+      <ul>
+        <li>Contributed to theater productions as a creative and technical volunteer.</li>
+        <li>Supported leadership and digital communications initiatives.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Drupal 9/10 (site building, theming, migrations, custom modules)</li>
+        <li>PHP, Twig, JavaScript (vanilla & jQuery), Python scripting</li>
+        <li>Acquia Cloud (DevOps, SSH, rsync, SSL, environment management)</li>
+        <li>Git & GitHub (branching, merging, conflict resolution)</li>
+        <li>Front-end: Bootstrap 5, SCSS, responsive design</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>Bachelor’s Degree</strong> – Relevant technical and creative studies</p>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">Printable resume — press <kbd>Cmd</kbd> + <kbd>P</kbd> to print.</div>
+  <footer>
+    &copy; 2025 Matthew Mills
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
